@@ -4,7 +4,7 @@ url = 'https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv'
 
 response = requests.get(url)
 
-with open('/root/taxi_zone_lookup.csv', 'wb') as f:
+with open('taxi_zone_lookup.csv', 'wb') as f:
     f.write(response.content)
 
 file = open('/root/taxi_zone_lookup.csv', 'r')
