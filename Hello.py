@@ -28,7 +28,7 @@ brooklyn = 0
 
 for line in lines:
     line = line.split(',')
-    if line[1] == 'Brooklyn':
+    if line[1] == '"Brooklyn"':
         brooklyn += 1
 
 print(brooklyn)
