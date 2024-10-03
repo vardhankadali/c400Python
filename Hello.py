@@ -7,7 +7,7 @@ response = requests.get(url)
 with open('taxi_zone_lookup.csv', 'wb') as f:
     f.write(response.content)
 
-file = open('/root/taxi_zone_lookup.csv', 'r')
+file = open('taxi_zone_lookup.csv', 'r')
 lines = file.readlines()
 file.close()
 
